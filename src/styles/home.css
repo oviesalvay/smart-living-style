@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Oxygen:wght@400;700&family=Roboto:wght@500;900&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background-color:#FBFCFC;
+}
+p{  
+color: #31353B;
+font-size: 1rem;
+margin: 1rem 0;
+}
+h1{
+font-size: 3rem;
+font-family: 'manrope';
+font-weight: 800;
+color:#000000;
+}
+h2{
+text-align: center;
+margin: 2rem 0;
+font-size: 2rem;
+color:#000000;
+font-family: 'manrope';
+}
+h3{
+font-size: 2rem;
+font-family: 'manrope';
+margin: 2rem 4rem;
+}
+h4{
+color:#31353B;
+font-size: 1.2rem;
+text-align: center;
+}
+h5{
+  font-size: 1.2rem;
+}
+.introduction{
+display: flex;
+flex-wrap: wrap;
+padding: 5rem 6rem;
+gap: 6rem;
+}
+.intro{
+  flex-wrap: wrap;
+  flex-basis: 400px;
+}
+form{
+  padding:  .8rem 0;
+}
+input{
+padding: .6rem 2rem;
+}
+input:focus{
+outline: none;
+}
+.amazing-partners > img{
+margin: 3rem 4.5rem;
+width: 5%;
+padding: 1 4rem;
+}
+.how-it-works > img{
+margin: 2rem 6rem;
+width: 18%;
+}
+.best-deal{
+  gap:28rem;
+  padding: 1rem 0;
+  display: flex;
+} 
+.Deals{
+  flex-basis: 500px;
+  flex-wrap: wrap;
+}
+.btn{
+background-color: #F85A47;
+border: none;
+border-radius: .5rem;
+color: white;
+padding: 1rem 1.7rem;
+}
+.feature{
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#F1FFFF;
+  gap: 2rem;
+}
+.feature > div{
+  margin: 0 auto;
+}
+.feature-text{
+padding: 3rem 0;
+width: 30%;
+}
+.budget{
+display: flex;
+margin: 1.4rem 0;
+column-gap: 5rem;
+}
+.btn-book{
+background-color: #F85A47;
+border: none;
+padding: 1rem;
+color: white;
+border-radius: 6%;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 400px;
+  gap: 4rem;
+  padding: 2rem 4rem;
+}
+.card-content{
+background-color:#FBFCFC;
+border:1px solid #EBEBEB;
+width: 25%;
+height: 22vw;
+padding:2rem 1rem;
+border-radius: .5rem;
+}
+.images{
+  display: flex;
+  align-items: center;
+  /* gap: 2rem; */
+  margin: 0 4rem;
+}
+.icon img{
+  width: 7%;
+  margin: 0 1rem;
+}
+.images a{
+  color:#2CBDE7;
+  text-decoration: underline;
+}
+.text{
+  flex-basis: 280px;
+}
+.newsletter{
+  text-align: center;
+  border-bottom: 1px solid #DEDFE1;
+  width: 700px;
+}

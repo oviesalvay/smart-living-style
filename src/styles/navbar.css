@@ -1,0 +1,13 @@
+a{
+color:black;
+margin:  2.4rem;
+text-decoration: none;
+font-size: 1.1rem;
+}
+.nav-content{
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
