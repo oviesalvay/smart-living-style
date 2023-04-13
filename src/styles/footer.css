@@ -1,0 +1,29 @@
+footer{
+    padding: 2rem 6rem;
+    align-items: center;
+    border-left: 2px solid #FD5B1B;
+    margin: 3rem 4rem;
+    height: 200px;
+  }
+  .footer-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .social-icon{
+    display: flex;
+    margin: 2rem 0;
+    gap: 1.7rem;
+  }
+  .recent-project > div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: .8rem 0;
+  }
+  .recent-project p{
+  flex-basis: 300px;
+  
+  }
+  
