@@ -190,13 +190,12 @@ border-radius: .5rem;
 }
 .newsletter > form{
   border: none;
-  /* background-color: white; */
+  background-color: white;
 }
 .newsletter-input{
   border-radius: 5%;
   display: flex;
-  align-items: center;
-  /* background-color: white; */
+  align-items: center; 
   width: 30%;
   margin: 1rem auto;
   padding: .6rem .7rem;
