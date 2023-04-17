@@ -1,0 +1,55 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.introduction-to{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+.intro-content{
+    flex-basis: 600px;
+    padding: 1rem 4rem;
+}
+.intro-content img{
+    margin: 2rem 0;
+}
+.intro-content > div{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+ .intro-content span{
+    display: block;
+    background-color:  #31353B;
+    width: 80px;
+    height: 1px;
+}
+.about-me p{
+text-align: center;
+}
+.about{
+    display: flex;
+    padding: 2rem 5rem;
+    gap: 3rem;
+}
+.about > img{
+    width: 40%;
+}
+.img-container p{
+    margin: 1.6rem 0;
+}
+.about-images{
+    display: flex;
+    flex-basis: 300px;
+    gap: 3rem;
+}
+.about-images div{
+    border:1px solid  #D4D4D4;
+    box-sizing: border-box;
+    border-radius: 8%;
+    padding: .1rem 1rem;
+    text-align: center;
+}

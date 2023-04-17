@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Oxygen:wght@400;700&family=Roboto:wght@500;900&family=Ubuntu:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
 margin: 0;
 padding: 0;
@@ -8,6 +9,7 @@ box-sizing: border-box;
 }
 body{
 background-color:#FBFCFC;
+/* overflow: hidden; */
 }
 p{  
 color: #31353B;
@@ -42,14 +44,16 @@ h5{
 }
 h6{
   font-size: .9rem;
+  font-family: "inter";
 }
 .introduction{
 display: flex;
 flex-wrap: wrap;
 padding: 5rem 6rem;
 }
+
 .intro{
-  flex-basis: 450px;
+  flex-basis: 450px; 
 }
 .intro h5{
   color: #FF9900;
@@ -71,45 +75,48 @@ border: none;
 input:focus{
 outline: none;
 }
-.Header-image img{
-  width: 100%;
-
-}
-.amazing-partners{
-  padding: 4rem 0;
-}
-.amazing-partners > img{
-margin: 3rem 4.5rem;
-width: 5%;
-padding: 1 4rem;
-}
 .amazing-partners h4{
   text-align: center;
 }
-.how-it-works > img{
+.amazing-partners > div > img{
+  padding: 2rem 0;
+  margin: 3rem 4rem;
+  width: 5%;
+}
+.how-it-works {
 margin: 2rem 6rem;
-width: 18%;
+}
+.icon{
+  display: flex;
+  text-align: center;
+  gap: 10rem;
+  margin: 2rem 0;
 }
 .best-deal{
   gap:5rem;
   padding: 3rem 5rem;
-  /* align-items: center; */
-  display: flex;
+  display: flex;  
 } 
 .Deals{
+  flex-basis: 600px;
 flex-grow: 1;
 }
-.properties > div > img{
-  width: 150%;
-}
 .properties{
-  flex-basis: 300px;
-  justify-content: space-between;
-   /* align-items: center; */
+  display: flex;
+  flex-direction: row;
   gap: 5rem;
+}
+.properties h6{
+  margin: 2rem 0;
+  font-family:'Manrope' ;
+}
+.property h6{
+  border-bottom: 2px solid  #F85A47;
+  width: 130px;
+}
+.residential{
   display: flex;
 }
-
 .btn{
 background-color: #F85A47;
 border: none;
@@ -118,18 +125,18 @@ color: white;
 padding: 1rem 1.7rem;
 }
 .feature{
-  background-color:#F1FFFF;
   display: flex;
   gap: 20rem;
   margin: 2rem 0;
+  background-color: #F1FFFF;
 }
 .feature-image img{
   margin: 1rem 6rem;
-  width: 70%;
+  /* width: 70%; */
 }
 .feature-text{
+  width: 30%;
 padding: 3rem 0;
-width: 30%;
 }
 .budget{
 display: flex;
@@ -179,49 +186,94 @@ border-radius: .5rem;
 }
 .newsletter{
   text-align: center;
-  border-bottom: 1px solid #DEDFE1;
-  width: 900px;
-  height: 200px;
   margin: 3rem auto;
 }
 .newsletter > form{
   border: none;
-}
-.newsletter input{
-  padding: 1.4rem 3rem;
+  /* background-color: white; */
 }
 .newsletter-input{
+  border-radius: 5%;
   display: flex;
   align-items: center;
-  background-color: white;
-  width: 50%;
+  /* background-color: white; */
+  width: 30%;
   margin: 1rem auto;
+  padding: .6rem .7rem;
 }
-/* footer{
-  padding: 2rem 6rem;
-  align-items: center;
-  border-left: 2px solid #FD5B1B;
-  margin: 3rem 4rem;
-  height: 200px;
+.newsletter span{
+  display: block;
+  background-color:  #DEDFE1;
+  width: 700px;
+  margin: 2rem auto;
 }
-.footer-contents{
+@media screen and (max-width:900px){
+  body{
+    overflow-x: hidden;
+  }
+nav{
+  padding: 2rem 0;
+}
+  .nav-links {
+  display: none;
+}
+.introduction{
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.amazing-partners > div{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  width: 0;
 }
-.social-icon{
-  display: flex;
+.icon{
+  text-align: center;
+  flex-direction: column;
+  gap: 0;
+}
+.best-deal, .properties{
+  flex-direction: column;
+}
+.feature{
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+.feature-image{
+  margin: 0 auto;
+}
+.feature-text{
+  width: fit-content;
+}
+.budget{
   margin: 2rem 0;
-  gap: 1.7rem;
+  column-gap: 3rem;
 }
-.recent-project > div{
-display: flex;
-align-items: center;
-gap: 1rem;
-margin: .8rem 0;
+.btn-book{
+  padding: .5rem 2rem;
 }
-.recent-project p{
-flex-basis: 300px;
-
-} */
+.card{
+  flex-direction: column;
+}
+.card-content{
+  width:fit-content;
+  height:fit-content;
+}
+.images{
+  flex-wrap: wrap; 
+  /* margin: 2rem 0; */
+}
+.images img{
+  width: 10%;
+}
+.newsletter{
+  text-align: center;
+  width: 300px;
+}
+.newsletter-input{
+  text-align: center;
+  padding: 1rem 4rem;
+}
+}

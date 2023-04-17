@@ -45,20 +45,38 @@ const Home = () =>{
             <figure className="Header-image">
                 <img src={HeaderImage}  />
             </figure>
-        </div><section className="amazing-partners">
+        </div>
+        <section className="amazing-partners">
                 <h4>Our Amazing Partners</h4>
+                <div>
                 <img src={buzz} />
                 <img src={microsoft } />
                 <img src={uber} />
                 <img src={gucc} />
                 <img src={img } />
                 <img src={chase} />
+                </div>
             </section>
             <section className="how-it-works">
                 <h2>How it works?</h2>
+                <div className="icon">
+                    <div>
                 <img src={research} />
+                        <h4>Research Suburbs</h4>
+                        <p>Wonder twenty hunted and put income set desire expect. Am cottage calling.</p>
+                    </div>
+                    <div>
                 <img src={track} />
+                <h4>Instant Valuation</h4>
+                <p>Conveying or northward offending admitting perfectly my. Colonel gravit and moonlight.</p>
+                        </div>
+                        <div>
                 <img src={instant} />
+                            <h4>Track Property</h4>
+                            <p>Moderate children at of outweigh it. 
+                                Unsatiable it considered invitation he travelling insensible.</p>
+                        </div>
+                </div>
             </section>
             <section className="best-deal">
                 <div className="Deals">
@@ -67,34 +85,35 @@ const Home = () =>{
                         Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.
                     </p>
                     <div className="properties">
-                        <div>
-                            <p>Resident Property</p>
-                            <img src={residential} />
-                        </div>
-                        <div>
-                            <p>Comercial Proper</p>
+                        <div className='property'>
+                            <h6>Resident Property</h6>
                             <img src={industrial} />
                         </div>
                         <div>
-                            <p>Agriculture Proper</p>
+                            <h6>Comercial Proper</h6>
+                            <img src={residential} />
+                        </div>
+                        <div>
+                            <h6>Agriculture Proper</h6>
                             <img src={agriculture} />
                         </div>
                         <div>
-                            <p>Industrial Property</p>
+                            <h6>Industrial Property</h6>
                         </div>
-                    </div>
-                </div>
+                            </div>
+                            </div>
                 <div>
                     <button class="btn">View All Property</button>
                 </div>
-            </section><section className="">
+            </section>
+            <section className="">
                 <h2>Featured Listing of the Week</h2>
                 <div className='feature'>
                     <div className="feature-image">
                         <img src={imageheader} />
                     </div>
                     <div className="feature-text">
-                        <h4>The and collecting for the motionless difficulty son.</h4>
+                        <h4>The and collecting for the <br />motionless difficulty son.</h4>
                         <p>Conveying or northward offending admitting perfectly my.
                             Colonel gravity get thought fat smiling add but difficult situations.</p>
                         <div className="budget">
@@ -170,15 +189,18 @@ const Home = () =>{
                         </div>
                     </div>
                 </div>
-            </section><section className="images">
-                {/* <div className='icon'> */}
+            </section>
+            <section className="images">
+                {/* <div> */}
                 <img src={img} />
                 <img src={ecc} />
                 <img src={Union} />
                 <img src={uber} />
                 <img src={microsoft} />
                 <p>Give us a Call +91 123-456-7890 and we can set you up, or<a href="">check our pricing plans</a></p>
-            </section><section className="newsletter">
+                {/* </div> */}
+            </section>
+            <section className="newsletter">
                 <h2>Get Our Newsletter</h2>
                 <h6>To join the worldwide community</h6>
                 <div className='newsletter-input'>
@@ -190,52 +212,9 @@ const Home = () =>{
                         <button className='btn'>Send Now</button>
                     </div>
                 </div>
+                <span></span>
             </section>
-            {/* <footer>
-                <section className="footer-contents">
-                    <div>
-                        <img src={Logo} />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div className=''>
-                            <h6>Follow Us</h6>
-                            <div className="social-icon">
-                                <img src={facebook} />
-                                <img src={twitter} />
-                                <img src={linkedin} />
-                                <img src={youtube} />
-                                <img src={instagram} />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="recent-project">
-                        <h5>Recent Projects</h5>
-                        <div>
-                            {/* <img src={rectangle} />
-                            <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.rem ipsum
-                                dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div>
-                            <img src={Rectangled} />
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
-                    </div>
-                    <div className='Location'>
-                        <h5>Campus Location</h5>
-                        <img src={rectangular} />
-                        <div>
-                            <h5>Contact Info</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div>
-                            <h6>Phone : (+91) 1234567890</h6>
-                            <h6>Email : abcd@domain.com</h6>
-                            <h6>Website : abcd@domain.in</h6>
-                        </div>
-                    </div>
-                </section>
-            </footer> */} 
             </>
-    // </div> 
-    )
-}
-export default Home;
+            )
+            }
+            export default Home

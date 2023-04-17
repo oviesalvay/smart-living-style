@@ -11,7 +11,7 @@ import Rectangled from "../assest/Rectangled.png";
 import rectangular from "../assest/rectangular.png";
 const Footer = () => {
     return(
-      <div>
+    //   <div>
         <footer>
         <section className="footer-contents">
                     <div>
@@ -30,15 +30,16 @@ const Footer = () => {
                     </div>
                     <div className="recent-project">
                         <h5>Recent Projects</h5>
-                        <div>
+                        <div className='projects'>
                             <img src={rectangle} />
                             <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.rem ipsum
                                 dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
-                        <div>
+                        <div className='projects'>
                             <img src={Rectangled} />
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
+                            <a href="#">View More</a>
                     </div>
                     <div className='Location'>
                         <h5>Campus Location</h5>
@@ -55,7 +56,7 @@ const Footer = () => {
                     </div>
                 </section>
       </footer>
-      </div> 
+    //   </div> 
     );
 };
 export default Footer;

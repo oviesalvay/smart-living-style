@@ -3,27 +3,46 @@ footer{
     align-items: center;
     border-left: 2px solid #FD5B1B;
     margin: 3rem 4rem;
-    height: 200px;
+    height: 250px;
   }
   .footer-contents{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 5rem;
   }
   .social-icon{
     display: flex;
     margin: 2rem 0;
     gap: 1.7rem;
   }
+  
   .recent-project > div{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: .8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: .8rem 0;
   }
   .recent-project p{
   flex-basis: 300px;
-  
+  }
+  .recent-project a{
+    color: #4F74F3;
+    font-size: .8rem;
+
+  }
+  @media screen and (max-width: 500px){
+    .footer-contents{
+      border-bottom: 2px solid #FD5B1B;
+      padding: 5rem 0;
+      flex-direction: column-reverse;
+    }
+    .recent-project p{
+      flex-basis:auto;
+    }
+    .projects{
+      flex-direction: column;
+      text-align: center;
+    }
   }
   

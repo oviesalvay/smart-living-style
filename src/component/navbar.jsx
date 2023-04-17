@@ -10,23 +10,23 @@ const Navbar = () => {
                 <div>
                     <img src={Logo}/>
                     </div>
-                    <div>
-          <NavLink to='/Home'>
+                    <div className="nav-links">
+          <NavLink to='/'>
             Home 
             </NavLink>
-            <NavLink to='/About'>
+            <NavLink to='/about'>
                 About
             </NavLink>
-            <NavLink to='/Service'>
+            <NavLink to='/service'>
                 Service
             </NavLink>
-            <NavLink to='/Portfolio'>
+            <NavLink to='/'>
                 Portfolio
             </NavLink>
-            <NavLink to='/blog'>
+            <NavLink to='/'>
                 Blog
             </NavLink>
-        <NavLink to ='/contact'>
+        <NavLink to ='/'>
             Contact
         </NavLink>
         </div>
