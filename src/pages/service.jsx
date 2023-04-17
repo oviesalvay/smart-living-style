@@ -1,4 +1,5 @@
 import web from "../assest/web.png";
+
 const Service = () => {
     return(
         <div>
