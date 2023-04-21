@@ -31,7 +31,9 @@ const Footer = () => {
                     <div className="recent-project">
                         <h5>Recent Projects</h5>
                         <div className='projects'>
+                            {/* <div> */}
                             <img src={rectangle} />
+                            {/* </div> */}
                             <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.rem ipsum
                                 dolor sit amet, consectetur adipiscing elit.</p>
                         </div>

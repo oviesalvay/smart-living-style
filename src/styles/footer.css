@@ -8,41 +8,47 @@ footer{
   .footer-contents{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 5rem;
+  }
+  .footer-contents > div{
+    flex-basis: 200px;
+    flex-grow: 1;
   }
   .social-icon{
     display: flex;
     margin: 2rem 0;
     gap: 1.7rem;
   }
-  
+  .social-icon img{
+    width: 30%;
+  }
+  .recent-project {
+    flex-basis: 200px;
+    flex-grow: 1;
+  }
   .recent-project > div{
       display: flex;
       align-items: center;
       gap: 1rem;
       margin: .8rem 0;
   }
-  .recent-project p{
-  flex-basis: 300px;
-  }
   .recent-project a{
     color: #4F74F3;
     font-size: .8rem;
-
+    margin: 0 0 0 4rem;
   }
-  @media screen and (max-width: 500px){
+  .Location{
+ flex-basis:200px;
+ flex-grow: 1;
+  }
+  @media screen and (max-width: 600px){
+    footer{
+      border-left: none;
+      padding: 2rem 0;
+    }
     .footer-contents{
-      border-bottom: 2px solid #FD5B1B;
-      padding: 5rem 0;
       flex-direction: column-reverse;
     }
-    .recent-project p{
-      flex-basis:auto;
-    }
-    .projects{
-      flex-direction: column;
-      text-align: center;
-    }
   }
-  

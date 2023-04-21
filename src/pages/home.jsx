@@ -1,30 +1,35 @@
 import '../styles/home.css';
 import Title from '../component/title';
  import HeaderImage from "../assest/HeaderImage.png";
- import buzz from "../assest/buzz.png";
- import microsoft from "../assest/microsoft.png";
- import uber from "../assest/uber.png";
- import gucc from "../assest/gucc.png";
- import img from "../assest/img.png";
- import chase from "../assest/chase.png";
+ import buzz from "../assest/buzz.svg";
+ import microsoft from "../assest/microsoft.svg";
+ import uber from "../assest/uber.svg";
+ import gucc from "../assest/gucc.svg";
+ import img from "../assest/img.svg";
+ import chase from "../assest/chase.svg";
  import track from "../assest/track.png";
+ import Ellipse from "../assest/Ellipse.svg";
  import instant from "../assest/instant.png";
  import research from "../assest/research.png";
+ import eclipsed from "../assest/eclipsed.svg";
  import industrial from "../assest/industrial.png"
  import agriculture from "../assest/agricuture.jpg";
  import residential from "../assest/residential.jpg";
  import imageheader from "../assest/imageheader.png";
+ import featureimage from "../assest/featureimage.svg";
  import Review from "../assest/Review.png";
  import jane from "../assest/jane.png";
  import robert from "../assest/robert.png";
  import lesile from "../assest/lesile.png";
- import ecc from "../assest/ecc.png";
- import Union from "../assest/Union.png";;
+ import ecc from "../assest/ecc.svg";
+ import Union from "../assest/Union.svg";
+ import { useState } from 'react';
 
 const Home = () =>{
+
+    const [activeTab, setActiveTab] = useState(1)
     return (
         <>
-        {/* <div> */}
         <div className="introduction">
             <div className="intro">
                 <h5>RESIDENTIAL & OFFICE SPACES</h5>
@@ -37,9 +42,7 @@ const Home = () =>{
                     <form>
                         <input type="text" id="text" placeholder="Enter Zipcode to search properties" />
                     </form>
-                    <div>
                         <button className="btn">Search Now!</button>
-                    </div>
                 </div>
             </div>
             <figure className="Header-image">
@@ -59,58 +62,89 @@ const Home = () =>{
             </section>
             <section className="how-it-works">
                 <h2>How it works?</h2>
-                <div className="icon">
-                    <div>
+                <div className="iconed">
+                    <div className=''>
+                        <div className='research'>
                 <img src={research} />
+                <img src={eclipsed} id='ess'/>
+                    </div>
+                <div>
                         <h4>Research Suburbs</h4>
                         <p>Wonder twenty hunted and put income set desire expect. Am cottage calling.</p>
                     </div>
-                    <div>
+                    </div>
+                    <div className=''>
+                        <div className='research'>
+                            <img src={Ellipse} id="ess"/>
                 <img src={track} />
+                <img src={Ellipse} id='ess'/>
+                </div>
+                    <div>
                 <h4>Instant Valuation</h4>
                 <p>Conveying or northward offending admitting perfectly my. Colonel gravit and moonlight.</p>
                         </div>
-                        <div>
+                        </div>
+                        <div className=''>
+                        <div className='research'>
+                            <img src={eclipsed} id="ess"/>
                 <img src={instant} />
+                </div>
+                <div>
                             <h4>Track Property</h4>
                             <p>Moderate children at of outweigh it. 
                                 Unsatiable it considered invitation he travelling insensible.</p>
+                                </div>
                         </div>
                 </div>
             </section>
             <section className="best-deal">
                 <div className="Deals">
+                    <div>
                     <h3>Best Real Estate Deals</h3>
                     <p>
                         Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.
                     </p>
+                           </div>
+                    <button className="btn-send">View All Property</button>
+                            </div>
                     <div className="properties">
                         <div className='property'>
-                            <h6>Resident Property</h6>
-                            <img src={industrial} />
+                            <h6 className={activeTab === 1 ? 'red' : ''} onClick={() => setActiveTab(1)}>Resident Property</h6>
                         </div>
                         <div>
-                            <h6>Comercial Proper</h6>
-                            <img src={residential} />
+                            <h6 className={activeTab ===2 ? 'red' : ''} onClick={() => setActiveTab(2)}>Commercial Property</h6>
                         </div>
                         <div>
-                            <h6>Agriculture Proper</h6>
-                            <img src={agriculture} />
+                            <h6 className={activeTab === 3 ? 'red' : ''} onClick={() => setActiveTab(3)}>Agriculture Property</h6>
                         </div>
                         <div>
-                            <h6>Industrial Property</h6>
+                            <h6 className={activeTab ===4 ? 'red' : ''} onClick={() => setActiveTab(4)}>Industrial Property</h6>
                         </div>
                             </div>
+                            <div className='property-content'>
+                                <figure>   
+                            <img src={residential} />
+                                </figure>
+                                <figure>
+                            <img src={agriculture} />
+                                </figure>
+                                <figure>
+                            <img src={industrial} />
+                                </figure>
                             </div>
                 <div>
-                    <button class="btn">View All Property</button>
                 </div>
             </section>
             <section className="">
                 <h2>Featured Listing of the Week</h2>
                 <div className='feature'>
-                    <div className="feature-image">
+                    <div className="feature-content">
+                        <figure>
                         <img src={imageheader} />
+                        </figure>
+                        <figure>
+                        <img src={featureimage} id='featured'/>
+                        </figure>
                     </div>
                     <div className="feature-text">
                         <h4>The and collecting for the <br />motionless difficulty son.</h4>
@@ -155,50 +189,54 @@ const Home = () =>{
                         <p>Moderate children at of outweigh it.
                             Unsatiable it considered invitation he travelling insensible.
                             Consulted admitting oh mr up as described.</p>
+                            <div className='jane'>
                         <div>
                             <img src={jane} />
                         </div>
                         <div>
                             <h6>Jane Cooper</h6>
-                            <p>Los Angeles, CA</p>
+                            Los Angeles, CA
                         </div>
+                    </div>
                     </div>
                     <div className="card-content">
                         <img src={Review} />
                         <p>The and collecting motionless difficulty son.
                             His hearing staying ten colonel met.
                             Sex drew six easy four dear cold</p>
+                            <div className='jane'>
                         <div>
                             <img src={robert} />
                         </div>
                         <div>
                             <h6>Robert Fox</h6>
-                            <p>New York City, NY</p>
+                            New York City, NY
                         </div>
+                    </div>
                     </div>
                     <div className="card-content">
                         <img src={Review} />
                         <p>Sociable on as carriage my position weddings raillery consider.
                             Peculiar trifling absolute and wandered vicinity property yet.</p>
+                            <div className='jane'>
                         <div>
                             <img src={lesile} />
                         </div>
                         <div>
                             <h6>Leslie Alexander</h6>
-                            <p>Buffalo, NJ</p>
+                            Buffalo, NJ
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>
             <section className="images">
-                {/* <div> */}
                 <img src={img} />
                 <img src={ecc} />
                 <img src={Union} />
                 <img src={uber} />
                 <img src={microsoft} />
                 <p>Give us a Call +91 123-456-7890 and we can set you up, or<a href="">check our pricing plans</a></p>
-                {/* </div> */}
             </section>
             <section className="newsletter">
                 <h2>Get Our Newsletter</h2>
@@ -209,7 +247,7 @@ const Home = () =>{
                         {/* example@gmail.com */}
                     </form>
                     <div>
-                        <button className='btn'>Send Now</button>
+                        <button className='btn-send'>Send Now</button>
                     </div>
                 </div>
                 <span></span>

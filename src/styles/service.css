@@ -1,0 +1,38 @@
+.services{
+    margin: 0 0 8rem 0;
+}
+.services p{
+    text-align: center;
+}
+.serve{
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 8rem; */
+    align-items: center;
+
+}
+.serve-words{
+    border:2px solid  #D4D4D4;
+    padding: 2rem 2rem;
+    border-radius: 9%;
+    /* width: 190px; */
+}
+.serve-words img{
+    margin: 1rem 0;
+}
+.serve-content{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.content img{
+    width: 20px;
+    color: black;
+}
+@media screen and (max-width: 600px){
+    .serve{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
