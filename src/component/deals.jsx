@@ -1,3 +1,4 @@
+import '../styles/deals.css';
 import { useState } from 'react';
 import industrial from "../assest/industrial.png"
  import agriculture from "../assest/agricuture.jpg";

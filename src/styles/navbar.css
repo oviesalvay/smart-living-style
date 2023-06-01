@@ -5,7 +5,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    padding:2rem clamp(6rem, 8vw, 6rem);
+    padding:1  rem clamp(6rem, 8vw, 6rem);
     align-items: center;
 }
 .nav-links{

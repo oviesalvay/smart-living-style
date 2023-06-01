@@ -1,0 +1,62 @@
+
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    gap: 5rem;
+    background-color: #f1ffff;
+  }
+  .feature-content img{
+    margin: 0 1rem;
+    width: 100%;
+    flex-basis: 300px;
+  }
+  #featured{
+    transform: translate(3%, -30%);
+  }
+  .feature-text {
+    width: clamp(70px, 50vw, 450px);
+    padding: 3rem 0;
+    flex-basis: 300px;
+  }
+  .budget {
+    display: flex;
+    margin: 1.5rem 0;
+    column-gap: 7rem;
+  }
+  .btn-book {
+    background-color: #f85a47;
+    box-shadow: 0px 44.8511px 35.8809px rgba(248, 90, 71, 0.07), 0px 29.0701px 21.0136px rgba(248, 90, 71, 0.0531481), 0px 17.276px 11.4287px rgba(248, 90, 71, 0.0425185), 0px 8.97021px 5.83064px rgba(248, 90, 71, 0.035), 0px 3.65453px 2.92362px
+     rgba(248, 90, 71, 0.0274815), 0px 0.830575px 1.41198px rgba(248, 90, 71, 0.0168519);;
+    border: none;
+    padding: .9rem 7rem;
+    flex-wrap: wrap;
+    color: white;
+    border-radius: 3%;
+  }
+
+  @media screen and (max-width: 900px){
+    .features{
+      padding: 2rem 0;
+    }
+    .features h2{
+        font-size: 1.3rem;
+    }
+    .feature{
+        gap: 0;
+    }
+    .feature-content img{
+        margin:1rem 0 0 0;
+    }
+    .feature-text{
+        padding: 0;
+    }
+    .budget{
+        column-gap: 2rem;
+    }
+    .features .btn-book{
+        padding: 1rem .3rem;
+        margin: 1rem 0 2rem 0;
+    }
+  } 

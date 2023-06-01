@@ -1,0 +1,35 @@
+.how-it-works {
+    margin: 2rem 6rem;
+  }
+  .iconed {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10rem;
+    margin: 5rem 0;
+  }
+  .iconed > div{
+    flex-basis: 300px;
+  }
+  .research{
+    display: flex;
+  justify-content: center;
+  }
+  #ess{
+    width: 13%;
+  height:25%;
+  float:right;
+  padding: 10px;
+  text-align:center;
+  }
+  @media  screen and (max-width:900px) {
+     .how-it-works{
+      margin: 0 2rem;
+  }
+    .how-it-works h2{
+      font-size: 1.3rem;
+    }
+    .iconed{
+      gap:2rem;
+    }
+  }

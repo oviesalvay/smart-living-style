@@ -16,7 +16,6 @@
     border:2px solid  #D4D4D4;
     padding: 2rem 2rem;
     border-radius: 9%;
-    /* width: 190px; */
 }
 .serve-words img{
     margin: 1rem 0;
@@ -33,6 +32,10 @@
 @media screen and (max-width: 600px){
     .serve{
         flex-direction: column;
+        padding: 1rem;
         gap: 3rem;
+    }
+    .serve-words{
+        padding: 1rem 4rem;
     }
 }

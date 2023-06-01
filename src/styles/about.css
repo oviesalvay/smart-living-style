@@ -53,7 +53,7 @@ text-align: center;
     padding: .1rem 1rem;
     text-align: center;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
   .introduction-to{
     flex-direction: column-reverse;
     gap: 0;
@@ -68,6 +68,7 @@ text-align: center;
   }
   .about{
     flex-direction: column;
+    padding: 1rem 2rem;
   }
   .about > img{
     display: block;

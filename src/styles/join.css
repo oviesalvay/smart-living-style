@@ -1,0 +1,17 @@
+.newsletter-input {
+    width: 340px;
+    padding: .1rem 1rem;
+    max-width:none;
+  }
+  .newsletter span{
+    width: 200px;
+  }
+  @media screen and (max-width:900px){
+   .newsletter h2{
+    font-size: 1.5rem;
+    
+   }
+    .newsletter span{
+        width: 300px;
+    }
+  }

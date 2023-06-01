@@ -1,3 +1,4 @@
+import '../styles/uses.css';
 import track from "../assest/track.png";
  import Ellipse from "../assest/Ellipse.svg";
  import instant from "../assest/instant.png";

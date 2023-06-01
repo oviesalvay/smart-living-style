@@ -1,13 +1,14 @@
+import '../styles/feature.css';
 import imageheader from "../assest/imageheader.png";
  import featureimage from "../assest/featureimage.svg";
 const Feature= () =>{
     return(
-        <section className="">
+        <section className="features">
                 <h2>Featured Listing of the Week</h2>
                 <div className='feature'>
                     <div className="feature-content">
                         <figure>
-                        <img src={imageheader} />
+                        <img src={imageheader} alt=""/>
                         </figure>
                         <figure>
                         <img src={featureimage} id='featured' alt=""/>

@@ -1,0 +1,40 @@
+.across-the-globe {
+    padding: 2rem 6rem;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0.5rem;
+  }
+  .card-content {
+    flex-basis: 300px;
+    background-color: #fbfcfc;
+    border: 1px solid #ebebeb;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+  }
+  .jane img{
+    width: 30px;
+  }
+  .jane{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    margin: 3rem 0 0 0;
+  }
+  @media screen and (max-width: 900px){
+.across-the-globe{
+  padding: 1rem;
+}
+    .across-the-globe h3{
+  font-size: 1.3rem;
+}
+.card-content{
+  flex-grow: 1;
+}
+.jane{
+  display: flex;
+  justify-content: space-between;
+}
+  }

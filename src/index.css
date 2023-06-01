@@ -27,6 +27,7 @@ p {
   color: #31353b;
   font-size: 1rem;
   margin: 1rem 0;
+  font-family: "Manrope";
 }
 h1 {
   font-size: clamp(1.5rem, 4vw, 3rem);

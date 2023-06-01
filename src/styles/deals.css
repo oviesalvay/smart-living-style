@@ -1,0 +1,80 @@
+
+.best-deal {
+    gap: 2rem;
+    padding: 3rem 5rem;
+    flex-wrap: wrap;
+  }
+  .Deals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Deals > div{
+    align-items: center;
+  }
+  .btn-send{
+    background-color: #f85a47;
+    border: none;
+    border-radius: .6rem;
+    font-size: 1rem;
+    color: white;
+    padding: 1.2rem 2rem; 
+    box-shadow: 0px 44.8511px 35.8809px rgba(248, 90, 71, 0.07), 0px 29.0701px 21.0136px rgba(248, 90, 71, 0.0531481),
+     0px 17.276px 11.4287px rgba(248, 90, 71, 0.0425185), 0px 8.97021px 5.83064px rgba(248, 90, 71, 0.035),
+      0px 3.65453px 2.92362px rgba(248, 90, 71, 0.0274815), 0px 0.830575px 1.41198px rgba(248, 90, 71, 0.0168519);;
+  }
+  .properties {
+    display: flex;
+    gap: 8rem;
+    flex-basis: 300px;
+  }
+  .property{
+    flex-basis: 300px;
+    margin: 2rem 0;
+  }
+  .red{
+    color: #f85a47; 
+    border-bottom: 1px solid #f85a47;
+
+  }
+  .properties h6 {
+    margin: 2rem 0;
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .property-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .property-content figure{
+    flex-grow: 1;
+    flex-basis: 200px;
+  }
+  .property-content img{
+    width: 100%;
+  }
+  .residential {
+    display: flex;
+  }
+  @media  screen and (max-width:900px) {
+    .best-deal{
+      padding: 0 2rem;
+    }
+    .Deals{
+      display: block;
+    }
+    .properties{
+      flex-direction: column;
+      gap:0;
+    }
+    .property{
+      flex-basis: 0;
+      margin: 0;
+    }
+    .red{
+      width: 170px;
+    }
+  }
