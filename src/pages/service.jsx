@@ -11,38 +11,38 @@ const Service = () => {
                 <p>What i offer</p>
             <div className="serve">
                 <div className="serve-words">
-                    <img src={web}/>
+                    <img src={web} alt=""/>
             <h4>Web Designer</h4>
 <div className="serve-content">
     <div>
 <p>view more </p>
 </div>
 <div className="content">
-<img src={arrow}/>
+<img src={arrow} alt=""/>
 </div>
 </div>
                 </div>
             <div className="serve-words">
-                <img src={arrowed}/>
+                <img src={arrowed} alt=''/>
                 <h4>UI/UX Designer</h4>
                 <div className="serve-content">
                     <div>
                     <p>view more </p>
                     </div>
                 <div className="content">
-                    <img src={arrow}/>
+                    <img src={arrow} alt=""/>
                 </div>
                 </div>
             </div>
             <div className="serve-words">
-                <img src={arrows}/>
+                <img src={arrows} alt=""/>
                 <h4>Branding Designer</h4>
                 <div className="serve-content">
                     <div>
                         <p>View more</p>
                     </div>
                         <div className="content">
-                            <img src={arrow}/>
+                            <img src={arrow} alt=""/>
                         </div>
                 </div>
             </div>

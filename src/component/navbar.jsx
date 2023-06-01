@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <header>
                 <nav>
-                            <img src={Logo} />
+                            <img src={Logo} alt=""/>
                         <div className={active ? 'nav-links active' : 'nav-links'}>
                             <NavLink to='/' onClick={handleClick}>
                                 Home

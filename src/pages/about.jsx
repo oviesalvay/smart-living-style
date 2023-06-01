@@ -13,17 +13,17 @@ const About = () => {
         <div>
         <section className='introduction-to'>
         <div className='intro-content'>
-        <img src={Logo} /> 
+        <img src={Logo}alt="" /> 
         <div>
         <span></span>
         <h4>User Interface Designer</h4> 
         </div>
 <p>I’m UI/UX designer in lucknow , and I’m  very passionate 
 and dedicated to my work..</p>
-        <img src={frame}/>
+        <img src={frame}alt=""/>
         </div> 
         <div className='image'>
-        <img src={eclipse}/>
+        <img src={eclipse} alt=""/>
         </div>
         </section>
         <section className='about-me'>
@@ -34,17 +34,17 @@ and dedicated to my work..</p>
 <div className="img-container">
 <div className='about-images'>
     <div>
-        <img src={Vector}/>
+        <img src={Vector} alt=""/>
         <h6>Experience</h6>
         <p>1 + years</p>
     </div>
     <div>
-<img src={Vectors}/>
+<img src={Vectors} alt=""/>
 <h6>Completed</h6>
 <p>10 + projects</p>
     </div>
     <div>
-        <img src={Vectored}/>
+        <img src={Vectored} alt=""/>
         <h6>Supports</h6>
         <p>Online 24/7</p>
     </div>
@@ -52,7 +52,7 @@ and dedicated to my work..</p>
 <p>UI/UX designer , I create web pages UI /UX userinterface ,
 I have years of experience and many clients are happy with 
 the projects carried out.</p>
-<img src={Frames}/>
+<img src={Frames} alt=""/>
 </div>
 </div>
 </section>

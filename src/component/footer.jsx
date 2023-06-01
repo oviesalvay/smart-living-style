@@ -15,37 +15,35 @@ const Footer = () => {
         <footer>
         <section className="footer-contents">
                     <div>
-                        <img src={Logo} />
+                        <img src={Logo} alt=""/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div className=''>
                             <h6>Follow Us</h6>
                             <div className="social-icon">
-                                <img src={facebook} />
-                                <img src={twitter} />
-                                <img src={linkedin} />
-                                <img src={youtube} />
-                                <img src={instagram} />
+                                <img src={facebook} alt=''/>
+                                <img src={twitter} alt=""/>
+                                <img src={linkedin} alt=''/>
+                                <img src={youtube} alt='' />
+                                <img src={instagram} alt=''/>
                             </div>
                         </div>
                     </div>
                     <div className="recent-project">
                         <h5>Recent Projects</h5>
                         <div className='projects'>
-                            {/* <div> */}
-                            <img src={rectangle} />
-                            {/* </div> */}
+                            <img src={rectangle} alt=''/>
                             <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.rem ipsum
                                 dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div className='projects'>
-                            <img src={Rectangled} />
+                            <img src={Rectangled}alt='' />
                           <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
-                            <a href="#">View More</a>
+                            <a href="#view">View More</a>
                     </div>
                     <div className='Location'>
                         <h5>Campus Location</h5>
-                        <img src={rectangular} />
+                        <img src={rectangular} alt=""/>
                         <div>
                             <h5>Contact Info</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

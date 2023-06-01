@@ -59,7 +59,7 @@ const Home = () =>{
                 <img src={Union} alt=""/>
                 <img src={uber} alt=""/>
                 <img src={microsoft} alt=""/>
-                <p>Give us a Call +91 123-456-7890 and we can set you up, or<a href="">check our pricing plans</a></p>
+                <p>Give us a Call +91 123-456-7890 and we can set you up, or<a href="#plans">check our pricing plans</a></p>
             </section>
             <Join />
             </>
