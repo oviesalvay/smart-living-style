@@ -38,7 +38,7 @@ const Deals = () => {
                             <img src={agriculture} alt="" />
                                 </figure>
                                 <figure>
-                            <img src={industrial} alt="" />
+                            <img src={industrial} alt="industrial" />
                                 </figure>
                             </div>
                 <div>

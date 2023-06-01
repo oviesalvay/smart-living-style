@@ -13,7 +13,7 @@ const Uses= () =>{
                     <div className=''>
                         <div className='research'>
                 <img src={research}  alt=""/>
-                <img src={eclipsed} id='ess'/>
+                <img src={eclipsed} id='ess' alt=""/>
                     </div>
                 <div>
                         <h4>Research Suburbs</h4>
@@ -24,7 +24,7 @@ const Uses= () =>{
                         <div className='research'>
                             <img src={Ellipse} id="ess" alt=""/>
                 <img src={track} alt=""/>
-                <img src={Ellipse} id='ess'/>
+                <img src={Ellipse} id='ess' alt=""/>
                 </div>
                     <div>
                 <h4>Instant Valuation</h4>
@@ -34,7 +34,7 @@ const Uses= () =>{
                         <div className=''>
                         <div className='research'>
                             <img src={eclipsed} id="ess" alt=""/>
-                <img src={instant} />
+                <img src={instant} alt=""/>
                 </div>
                 <div>
                             <h4>Track Property</h4>
