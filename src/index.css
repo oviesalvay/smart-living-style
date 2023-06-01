@@ -23,3 +23,40 @@ box-sizing: border-box;
 img{
   max-width: 100%;
 }
+p {
+  color: #31353b;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-family: "manrope";
+  font-weight: 800;
+  color: #000000;
+}
+h2 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #000000;
+  font-family: "manrope";
+}
+h3 {
+  font-size: 2rem;
+  font-family: "manrope";
+  margin: 2rem 0;
+}
+
+h4 {
+  color: #31353b;
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.2rem;
+  color: #fd5b1b;
+}
+h6 {
+  font-size: 0.9rem;
+  font-family: "inter";
+  margin: .7rem 0;
+}

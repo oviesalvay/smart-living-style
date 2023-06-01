@@ -1,51 +1,12 @@
 body {
   background-color: #fbfcfc;
 }
-p {
-  color: #31353b;
-  font-size: 1rem;
-  margin: 1rem 0;
-}
-h1 {
-  font-size: clamp(1.5rem, 4vw, 3rem);
-  font-family: "manrope";
-  font-weight: 800;
-  color: #000000;
-}
-h2 {
-  text-align: center;
-  margin: 1rem 0;
-  font-size: 2rem;
-  color: #000000;
-  font-family: "manrope";
-}
-h3 {
-  font-size: 2rem;
-  font-family: "manrope";
-  margin: 2rem 0;
-}
-
-h4 {
-  color: #31353b;
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1.2rem;
-  color: #fd5b1b;
-}
-
-h6 {
-  font-size: 0.9rem;
-  font-family: "inter";
-}
 
 .introduction {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem clamp(1rem, 10vw, 10rem) 5rem 6rem;
 }
-
 .introduction::after {
   content: "";
   display: block;
@@ -291,9 +252,6 @@ color: #f85a47;
   margin: 2rem auto;
 }
 @media screen and (max-width: 900px) {
-      body{
-        overflow: hidden;
-      }
   .introduction {
     flex-direction: column-reverse;
     text-align: center;
@@ -304,6 +262,9 @@ color: #f85a47;
 }
 .introduction figure{
   flex-basis: 0;
+}
+.input-details{
+width: 100%;
 }
   .amazing-partners>div {
     text-align: center;
@@ -341,13 +302,13 @@ color: #f85a47;
     padding: 1rem 0;
   }
   .feature-text {
-    width: fit-content;
-    text-align: center;
+    width: 100%;
   }
   .budget {
     margin: 2rem 0;
     column-gap: 2rem;
     padding: 0 1rem;
+    text-align: center;
   }
 .across-the-globe{
   padding: 0 2rem;
